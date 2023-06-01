@@ -16,3 +16,42 @@ body {
     margin: 0 auto;
 }
 
+/*CAROSELLO*/
+#carousel {
+    height: 400px;
+    width: 800px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#carousel .gallery {
+    height: 100%;
+}
+
+#carousel img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+}
+
+#carousel img.active {
+    display: block;
+}
+
+#carousel i {
+    position: absolute;
+    top: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    translate: 0 -50%;
+}
+
+#prev {
+    right: 105%;
+}
+
+#next {
+    left: 105%;
+}
